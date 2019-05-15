@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+  <describe zoomD="100" zoomN="100" modelX="2" modelY="1" modelType="FALSE">
+    <FileVersion>1.0</FileVersion>
+    <brick name="TWIDO1">
+      <base ref="TWDLCAE40DRF" xpos="111" ypos="276" label="Worker1_for_SCADA">
+      </base>
+      <leftModuleList>
+      </leftModuleList>
+      <expansionList>
+      </expansionList>
+      <optionList>
+      </optionList>
+      <portList>
+        <port nmbr="1">
+          <address>1</address>
+          <protocol>MODBUS</protocol>
+          <IsModBusMaster>0</IsModBusMaster>
+        </port>
+        <port nmbr="2">
+          <address>1</address>
+          <protocol>ETHERNET</protocol>
+          <IsModBusMaster>0</IsModBusMaster>
+        </port>
+      </portList>
+    </brick>
+    <networkElementList>
+      <networkElement ref="61100012" name="SCADA" nmbr="1" xpos="56" ypos="103" isConfig="TRUE">
+        <configParam>
+          <address>247</address>
+          <protocol>MODBUS</protocol>
+          <SupervisionTag>$</SupervisionTag>
+          <ResetParamTag>$</ResetParamTag>
+          <IsModBusMaster>1</IsModBusMaster>
+        </configParam>
+      </networkElement>
+    </networkElementList>
+    <networkList>
+      <network name="MODBUS WORKER1" nmbr="1">
+        <label xpos="96" ypos="189">
+        </label>
+        <com>TModbusCom_A</com>
+        <configParam>
+          <baudrate>9600</baudrate>
+          <dataByte>8</dataByte>
+          <stopBit>1</stopBit>
+          <responseTime>10</responseTime>
+          <breakOutTime>10</breakOutTime>
+          <parity>none</parity>
+        </configParam>
+        <linkList>
+          <link nmbr="1">
+            <begin>
+              <anchorPoint strID="Twido1_Base_Port1_Anchor1">
+              </anchorPoint>
+            </begin>
+            <end>
+              <anchorPoint strID="Slave1_Anchor1">
+              </anchorPoint>
+            </end>
+            <interPoint xpos="132" ypos="261">
+            </interPoint>
+            <interPoint xpos="84" ypos="261">
+            </interPoint>
+            <interPoint xpos="84" ypos="165">
+            </interPoint>
+          </link>
+        </linkList>
+      </network>
+    </networkList>
+    <postItList>
+    </postItList>
+  </describe>
+
+

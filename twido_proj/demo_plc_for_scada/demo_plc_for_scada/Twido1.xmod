@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+  <CONFIG>
+    <COMPUTER>
+      <ENTRY>
+        <NAME>TCP</NAME>
+        <CONNECTION_TYPE>ETHERNET</CONNECTION_TYPE>
+        <DESCRIPTION>192.168.1.11</DESCRIPTION>
+        <REG_ENTRY>$</REG_ENTRY>
+        <COM_PORT>$</COM_PORT>
+        <PUNIT_ADDR>D</PUNIT_ADDR>
+        <BAUD_RATE>$</BAUD_RATE>
+        <PARITY>0</PARITY>
+        <STOP_BITS>$</STOP_BITS>
+        <GLOBAL_TIMEOUT>5000</GLOBAL_TIMEOUT>
+        <INTER_CAR_TIMEOUT>5</INTER_CAR_TIMEOUT>
+      </ENTRY>
+    </COMPUTER>
+  </CONFIG>
+
+
